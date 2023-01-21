@@ -134,7 +134,6 @@ body {
 }
 
 .hero {
-  background: var(--black-color);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -202,10 +201,12 @@ body {
   flex-basis: calc((100% - 72px) / 4);
 }
 
-.main-item-icon {
-  margin: 24px 100px;
-  background: var(--milk-color);
+.main-item-icon-container {
+  display: flex;
+  justify-content: center;
+  background-color: var(--milk-color);
   border-radius: 4px;
+  padding: 24px 0;
 }
 
 .main-subtitle {
@@ -563,6 +564,9 @@ button:focus {
   row-gap: 48px;
 }
 
+.concept-link {
+}
+
 .concept-item {
   flex-basis: calc((100% - 48px) / 3);
 }
@@ -595,7 +599,7 @@ button:focus {
 }
 
 .concept-list .concept-item:hover .concept-item-h2-p {
-  border: 0.5px solid #f4f4fd;
+  border-color: var(--milk-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
